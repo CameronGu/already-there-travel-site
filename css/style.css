@@ -794,6 +794,12 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 
+ion-icon {
+  font-size: 64px;
+  color: #000;
+  --ionicon-stroke-width: 24px;;
+}
+
 /* Owl Carousel */
 .owl-carousel .owl-item {
   opacity: .4;
@@ -1172,6 +1178,11 @@ textarea.form-control {
 
 .text-muted {
   color: #cccccc !important;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .custom-pagination {
@@ -1695,9 +1706,19 @@ textarea.form-control {
   opacity: 0.5;
 }
 
+.bg-slider {
+  opacity: 1;
+}
+
 .logo-slider {
   max-height: 50%;
   overflow:hidden;
+}
+
+.pic-slider {
+  max-height:50%;
+  overflow:hidden;
+  margin-bottom: 2em;
 }
 
 #loader {
