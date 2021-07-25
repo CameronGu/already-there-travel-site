@@ -1299,10 +1299,6 @@ ion-icon[size=xl-white] {
   margin: 0 auto;
 }
 
-.uploader-matching-button {
-
-}
-
 .uploadcare--widget__button_type_open {
   text-transform: uppercase;
   letter-spacing: .2em;
