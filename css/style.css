@@ -797,7 +797,13 @@ textarea.form-control {
 ion-icon {
   font-size: 64px;
   color: #000;
-  --ionicon-stroke-width: 24px;;
+  --ionicon-stroke-width: 24px;
+}
+
+ion-icon[size=xl-white] {
+  font-size: 80px;
+  color: #fff;
+  --ionicon-stroke-width: 24px;
 }
 
 /* Owl Carousel */
@@ -1182,7 +1188,7 @@ ion-icon {
 
 .text-justify {
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: auto;
 }
 
 .custom-pagination {
@@ -1291,6 +1297,43 @@ ion-icon {
   font-size: 26px;
   max-width: 500px;
   margin: 0 auto;
+}
+
+.uploader-matching-button {
+
+}
+
+.uploadcare--widget__button_type_open {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #343a40;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  border-color: #343a40;
+}
+
+.uploadcare--widget__button_type_open:hover, .uploadcare--widget__button_type_open:focus {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #343a40;
+  color: #fff;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.uploadcare--widget__button_type_open:focus {
+  transform: scale(0.9);
+}
+
+.required label:after {
+  color: #e32;
+  font-size: 0.7em;
+  content: ' *';
+  display:inline;
 }
 
 @media (max-width: 991.98px) {

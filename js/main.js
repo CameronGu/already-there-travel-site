@@ -387,6 +387,21 @@ AOS.init({
   });
   $('#time').timepicker();
 
+  // custom form validation message
+
+  const phone = document.getElementById("phone");
+
+  phone.addEventListener("input", (input) => {
+  
+    if (phone.validity.patternMismatch) {
+      phone.setCustomValidity(`${input.target.value} is not a valid phone number`);
+    } else {
+      phone.setCustomValidity("");
+    }
+  });
+
+
+
 
   //------- Google Map  js --------//  
 
