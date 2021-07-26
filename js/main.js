@@ -390,15 +390,16 @@ AOS.init({
   // custom form validation message
 
   const phone = document.getElementById("phone");
+  if(typeof(phone) != 'undefined' && phone != null) {
+    phone.addEventListener("input", (input) => {
+      if (phone.validity.patternMismatch) {
+        phone.setCustomValidity(`${input.target.value} is not a valid phone number`);
+      } else {
+        phone.setCustomValidity("");
+      }
+    });
+  }
 
-  phone.addEventListener("input", (input) => {
-  
-    if (phone.validity.patternMismatch) {
-      phone.setCustomValidity(`${input.target.value} is not a valid phone number`);
-    } else {
-      phone.setCustomValidity("");
-    }
-  });
 
 
 
